@@ -1,57 +1,116 @@
-import React, { useEffect, useState } from 'react'
+"use client"
+
+import { useState } from "react"
+import { Button } from "@/src/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/src/components/ui/card"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/src/components/ui/dialog"
+import { motion } from "framer-motion"
 
 const jsonData = [
   {
     id: 1,
-    name: 'Hybrid Coating',
-    image: 'img/hybridCoating.jpg',
-    desct: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, obcaecati. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.'
+    name: "Hybrid Coating",
+    image: "img/hybridCoating.jpg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
   {
     id: 2,
-    name: 'Building Painting',
-    image: 'img/buildingPainting.jpg',
-    desct: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, obcaecati. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.'
+    name: "Building Painting",
+    image: "img/buildingPainting.jpg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
   {
     id: 3,
-    name: 'Water Proofing',
-    image: 'img/waterproofing.jpg',
-    desct: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, obcaecati. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.'
-  }
-
+    name: "Water Proofing",
+    image: "img/waterproofing.jpg",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
+  },
 ]
 
-const whatWeDo = () => {
+const WhatWeDo = () => {
+  const [selectedService, setSelectedService] = useState<(typeof jsonData)[0] | null>(null)
 
   return (
-    <div>
-      <div className='text-center'>
-        <h1 className='text-5xl'>What we do?</h1>
-        <p className='text-xl'>We provide the following services</p>
-        {
-          jsonData.map((data) => (
-            <div key={data.id} className="grid grid-cols-3 gap-2 m-1">
-              <div className="flex flex-col items-center justify-between m-3 border-2 border-gray-300 p-3 rounded">
-                <div>
-                  <img src={data.image} alt={data.name} className='rounded' />
+    <section className="py-12 px-4 md:px-8 bg-gray-50 dark:bg-gray-900">
+      <div className="container mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold mb-3 text-gray-900 dark:text-white">What We Do</h2>
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300">
+            We provide the following premium services
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {jsonData.map((service, index) => (
+            <motion.div
+              key={service.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={service.image || "/placeholder.svg"}
+                    alt={service.name}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
                 </div>
-                <div>
-                  <h2 className='text-3xl'>{data.name}</h2>
-                  <p>{data.desct}</p>
-                </div>
-                <div>
-                  <button className='bg-blue-500 text-white p-2 rounded w-full'>
-                    Know More!
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))
-        }
+                <CardHeader>
+                  <CardTitle className="text-2xl font-bold text-gray-900 dark:text-white">{service.name}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <CardDescription className="text-gray-600 dark:text-gray-300 line-clamp-3">
+                    {service.desc}
+                  </CardDescription>
+                </CardContent>
+                <CardFooter>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button className="w-full" variant="outline" onClick={() => setSelectedService(service)}>
+                        Know More!
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[525px]">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl">{selectedService?.name}</DialogTitle>
+                        <DialogDescription>Comprehensive details about our service</DialogDescription>
+                      </DialogHeader>
+                      <div className="mt-4">
+                        <img
+                          src={selectedService?.image || "/placeholder.svg"}
+                          alt={selectedService?.name}
+                          className="w-full h-48 object-cover rounded-md mb-4"
+                        />
+                        <p className="text-gray-700 dark:text-gray-300">{selectedService?.desc}</p>
+                        <div className="mt-6">
+                          <h4 className="font-semibold mb-2">Benefits:</h4>
+                          <ul className="list-disc pl-5 space-y-1 text-gray-700 dark:text-gray-300">
+                            <li>Long-lasting protection</li>
+                            <li>Cost-effective solution</li>
+                            <li>Environmentally friendly</li>
+                            <li>Quick application process</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+                </CardFooter>
+              </Card>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 
-export default whatWeDo
+export default WhatWeDo
+
