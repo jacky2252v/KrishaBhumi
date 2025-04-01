@@ -53,9 +53,9 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-white dark:bg-gray-950 shadow-sm">
       <div className="flex justify-between items-center px-4 md:px-8 py-3">
         <div className="flex items-center">
-          <img src="/img/logolight.png" alt="Krisha Bhumi Logo" className="h-20 w-auto dark:hidden" />
-          {/* Add a dark mode logo or use the same one */}
           <img src="/img/logolight.png" alt="Krisha Bhumi Logo" className="h-20 w-auto hidden dark:block" />
+          {/* Add a dark mode logo or use the same one */}
+          <img src="/img/LogoDark.png" alt="Krisha Bhumi Logo" className="h-20 w-auto dark:hidden" />
         </div>
 
         {/* Desktop Navigation */}
