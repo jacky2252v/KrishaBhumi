@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -41,10 +42,12 @@ const Hero = () => {
         <div className="relative w-full h-[50vh] md:h-[70vh] lg:h-[80vh] overflow-hidden bg-gray-100 dark:bg-gray-900">
             {/* Main Image */}
             <div className="w-full h-full">
-                <img
+                <Image
                     src={images[currentIndex] || "/placeholder.svg"}
                     alt={`Slide ${currentIndex + 1}`}
                     className="w-full h-full object-cover transition-all duration-500 ease-in-out"
+                    fill
+                    sizes="100vw"
                 />
 
                 {/* Overlay with text */}

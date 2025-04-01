@@ -17,6 +17,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "sonner";
 import { ThemeToggle } from "./theme-toggle"
+import Image from "next/image"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -53,9 +54,8 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-white dark:bg-gray-950 shadow-sm">
       <div className="flex justify-between items-center px-4 md:px-8 py-3">
         <div className="flex items-center">
-          <img src="/img/logolight.png" alt="Krisha Bhumi Logo" className="h-20 w-auto hidden dark:block" />
-          {/* Add a dark mode logo or use the same one */}
-          <img src="/img/LogoDark.png" alt="Krisha Bhumi Logo" className="h-20 w-auto dark:hidden" />
+          <Image src="/img/logolight.png" alt="Krisha Bhumi Logo" className="h-20 w-auto hidden dark:block" width={200} height={100} />
+          <Image src="/img/LogoDark.png" alt="Krisha Bhumi Logo" className="h-20 w-auto dark:hidden" width={200} height={100} />
         </div>
 
         {/* Desktop Navigation */}
@@ -69,7 +69,7 @@ const Navbar = () => {
             <DialogContent className="sm:max-w-[425px]">
               <DialogHeader>
                 <DialogTitle>Tell us about yourself</DialogTitle>
-                <DialogDescription>Fill in your details and we'll get back to you soon.</DialogDescription>
+                <DialogDescription>Fill in your details and we&apos;ll get back to you soon.</DialogDescription>
               </DialogHeader>
               <form onSubmit={handleSubmit} className="space-y-4 mt-4">
                 <div className="grid gap-2">
@@ -136,7 +136,7 @@ const Navbar = () => {
             <DialogContent className="sm:max-w-[425px]">
               <DialogHeader>
                 <DialogTitle>Tell us about yourself</DialogTitle>
-                <DialogDescription>Fill in your details and we'll get back to you soon.</DialogDescription>
+                <DialogDescription>Fill in your details and we&apos;ll get back to you soon.</DialogDescription>
               </DialogHeader>
               <form onSubmit={handleSubmit} className="space-y-4 mt-4">
                 <div className="grid gap-2">

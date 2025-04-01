@@ -12,24 +12,25 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const jsonData = [
   {
     id: 1,
     name: "Hybrid Coating",
-    image: "img/hybridCoating.jpg",
+    image: "/img/hybridCoating.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
   {
     id: 2,
     name: "Building Painting",
-    image: "img/buildingPainting.jpg",
+    image: "/img/buildingPainting.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
   {
     id: 3,
     name: "Water Proofing",
-    image: "img/waterproofing.jpg",
+    image: "/img/waterproofing.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
 ]
@@ -57,10 +58,12 @@ const WhatWeDo = () => {
             >
               <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 dark:bg-gray-800 border-gray-200 dark:border-gray-700">
                 <div className="relative h-48 overflow-hidden">
-                  <img
+                  <Image
                     src={service.image || "/placeholder.svg"}
                     alt={service.name}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    width={500}
+                    height={200}
                   />
                 </div>
                 <CardHeader>
@@ -84,10 +87,12 @@ const WhatWeDo = () => {
                         <DialogDescription>Comprehensive details about our service</DialogDescription>
                       </DialogHeader>
                       <div className="mt-4">
-                        <img
+                        <Image
                           src={selectedService?.image || "/placeholder.svg"}
-                          alt={selectedService?.name}
+                          alt={selectedService?.name || "Service image"}
                           className="w-full h-48 object-cover rounded-md mb-4"
+                          width={500}
+                          height={200}
                         />
                         <p className="text-gray-700 dark:text-gray-300">{selectedService?.desc}</p>
                         <div className="mt-6">
