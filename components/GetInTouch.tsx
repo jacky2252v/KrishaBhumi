@@ -129,7 +129,7 @@ const GetInTouch = () => {
             <CardContent className="p-6 md:p-8">
               <CardHeader className="p-0 mb-4">
                 <CardTitle className="text-2xl font-bold text-gray-900 dark:text-white">Get In Touch</CardTitle>
-                <CardDescription>Fill out the form below and we'll get back to you soon.</CardDescription>
+                <CardDescription>Fill out the form below and we&apos;ll get back to you soon.</CardDescription>
               </CardHeader>
 
               <form onSubmit={handleSubmit} className="space-y-4">

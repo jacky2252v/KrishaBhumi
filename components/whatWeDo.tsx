@@ -12,6 +12,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const jsonData = [
   {
@@ -57,7 +58,7 @@ const WhatWeDo = () => {
             >
               <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 dark:bg-gray-800 border-gray-200 dark:border-gray-700">
                 <div className="relative h-48 overflow-hidden">
-                  <img
+                  <Image
                     src={service.image || "/placeholder.svg"}
                     alt={service.name}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
@@ -84,9 +85,9 @@ const WhatWeDo = () => {
                         <DialogDescription>Comprehensive details about our service</DialogDescription>
                       </DialogHeader>
                       <div className="mt-4">
-                        <img
+                        <Image
                           src={selectedService?.image || "/placeholder.svg"}
-                          alt={selectedService?.name}
+                          alt={selectedService?.name || "Service image"}
                           className="w-full h-48 object-cover rounded-md mb-4"
                         />
                         <p className="text-gray-700 dark:text-gray-300">{selectedService?.desc}</p>
