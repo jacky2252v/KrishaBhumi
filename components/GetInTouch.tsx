@@ -54,7 +54,7 @@ const GetInTouch = () => {
       <div className="container mx-auto max-w-4xl">
         <Card className="border-gray-200 dark:border-gray-800 shadow-md overflow-hidden">
           <div className="grid md:grid-cols-2">
-            <div className="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 p-6 md:p-8 flex flex-col justify-center">
+            <div className="p-6 md:p-8 flex flex-col justify-center">
               <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">Contact Information</h3>
               <div className="space-y-4 text-gray-700 dark:text-gray-300">
                 <div className="flex items-start">
