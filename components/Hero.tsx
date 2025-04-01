@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@/src/components/ui/button"
+import { Button } from "@/components/ui/button"
 
 const Hero = () => {
     const images = ["/img/imgOne.jpg", "/img/imgTwo.jpg", "/img/imgThree.jpg", "/img/imgFour.jpg"]
@@ -92,4 +92,3 @@ const Hero = () => {
 }
 
 export default Hero
-

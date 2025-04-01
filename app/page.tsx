@@ -1,10 +1,11 @@
 "use client"
 
-import Footer from "../components/Footer"
-import GetInTouch from "../components/GetInTouch"
-import Hero from "../components/Hero"
-import Navbar from "../components/Navbar"
-import WhatWeDo from "../components/whatWeDo"
+import Footer from "@/components/Footer"
+import GetInTouch from "@/components/GetInTouch"
+import Hero from "@/components/Hero"
+import Navbar from "@/components/Navbar"
+import WhatWeDo from "@/components/WhatWeDo"
+
 
 
 export default function Home() {

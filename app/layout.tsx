@@ -1,7 +1,6 @@
-import type React from "react"
-import "@/app/globals.css"
-import { ThemeProvider } from "@/src/components/theme-provider"
-import { Toaster } from "@/src/components/ui/sonner"
+import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from "@/components/ui/sonner"
 
 export default function RootLayout({
   children,
@@ -15,7 +14,12 @@ export default function RootLayout({
         <meta name="description" content="Your trusted partner for quality construction services" />
       </head>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
           <Toaster />
         </ThemeProvider>
@@ -23,11 +27,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'
-
-export const metadata = {
-      generator: 'v0.dev'
-    };
