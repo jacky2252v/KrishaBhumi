@@ -18,19 +18,19 @@ const jsonData = [
   {
     id: 1,
     name: "Hybrid Coating",
-    image: "img/hybridCoating.jpg",
+    image: "/img/hybridCoating.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
   {
     id: 2,
     name: "Building Painting",
-    image: "img/buildingPainting.jpg",
+    image: "/img/buildingPainting.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
   {
     id: 3,
     name: "Water Proofing",
-    image: "img/waterproofing.jpg",
+    image: "/img/waterproofing.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
 ]
@@ -62,6 +62,8 @@ const WhatWeDo = () => {
                     src={service.image || "/placeholder.svg"}
                     alt={service.name}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    width={500}
+                    height={200}
                   />
                 </div>
                 <CardHeader>
@@ -89,6 +91,8 @@ const WhatWeDo = () => {
                           src={selectedService?.image || "/placeholder.svg"}
                           alt={selectedService?.name || "Service image"}
                           className="w-full h-48 object-cover rounded-md mb-4"
+                          width={500}
+                          height={200}
                         />
                         <p className="text-gray-700 dark:text-gray-300">{selectedService?.desc}</p>
                         <div className="mt-6">

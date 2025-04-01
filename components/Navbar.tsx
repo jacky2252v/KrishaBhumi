@@ -54,8 +54,8 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-white dark:bg-gray-950 shadow-sm">
       <div className="flex justify-between items-center px-4 md:px-8 py-3">
         <div className="flex items-center">
-          <Image src="/img/logolight.png" alt="Krisha Bhumi Logo" className="h-20 w-auto hidden dark:block" />
-          <Image src="/img/LogoDark.png" alt="Krisha Bhumi Logo" className="h-20 w-auto dark:hidden" />
+          <Image src="/img/logolight.png" alt="Krisha Bhumi Logo" className="h-20 w-auto hidden dark:block" width={200} height={100} />
+          <Image src="/img/LogoDark.png" alt="Krisha Bhumi Logo" className="h-20 w-auto dark:hidden" width={200} height={100} />
         </div>
 
         {/* Desktop Navigation */}
