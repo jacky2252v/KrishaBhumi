@@ -16,8 +16,10 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "sonner";
-import { ThemeToggle } from "./theme-toggle"
+import { ThemeToggle } from "../theme-toggle"
 import Image from "next/image"
+import NavButton from "./NavbarButton"
+import data from "./Navbar.json"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -37,16 +39,13 @@ const Navbar = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Store data in localStorage
     localStorage.setItem("contactInfo", JSON.stringify(formData))
 
-    // Show success toast
     toast.success("Information Saved", {
       description: "Your information has been saved successfully!",
       duration: 3000,
     })
 
-    // Reset form
     setFormData({ name: "", email: "", message: "" })
   }
 
@@ -60,6 +59,10 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-4">
+          {Object.values(data).map((index) => (
+            <NavButton key={index.navName} navLink={index.navLink} navName={index.navName} />
+          ))}
+
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline" className="border-primary hover:bg-primary/10 hover:text-primary">
