@@ -1,0 +1,22 @@
+{
+    "home": {
+        "navLink": "/",
+        "navName": "Home"
+    },
+    "projects": {
+        "navLink": "/projects",
+        "navName": "Projects"
+    },
+    "services": {
+        "navLink": "/services",
+        "navName": "Services"
+    },
+    "contact": {
+        "navLink": "/contact",
+        "navName": "Contact"
+    },
+    "about": {
+        "navLink": "/about",
+        "navName": "About Us"
+    }
+}
