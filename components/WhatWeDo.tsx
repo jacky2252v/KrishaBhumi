@@ -39,7 +39,7 @@ const WhatWeDo = () => {
   const [selectedService, setSelectedService] = useState<(typeof jsonData)[0] | null>(null)
 
   return (
-    <section className="py-12 px-4 md:px-8 bg-gray-50 dark:bg-gray-900">
+    <section className="py-12 px-4 md:px-8">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-3 text-gray-900 dark:text-white">What We Do</h2>
@@ -56,7 +56,7 @@ const WhatWeDo = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+              <Card className="h-full flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300 border-gray-200 dark:border-gray-700">
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={service.image || "/placeholder.svg"}
