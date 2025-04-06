@@ -9,7 +9,7 @@ import WhatWeDo from "@/components/WhatWeDo"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+    <main className="min-h-screen  text-gray-900 dark:text-gray-100">
       <Hero />
       <WhatWeDo />
       <GetInTouch />

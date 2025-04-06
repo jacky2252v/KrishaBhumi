@@ -50,7 +50,7 @@ const GetInTouch = () => {
   }
 
   return (
-    <section className="py-12 px-4 md:px-8 bg-white dark:bg-gray-950">
+    <section className="py-12 px-4 md:px-8 ">
       <div className="container mx-auto max-w-4xl">
         <Card className="border-gray-200 dark:border-gray-800 shadow-md overflow-hidden">
           <div className="grid md:grid-cols-2">
