@@ -13,7 +13,6 @@ export default function Home() {
       <Hero />
       <WhatWeDo />
       <GetInTouch />
-      <Footer />
     </main>
   )
 }
