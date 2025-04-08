@@ -70,7 +70,7 @@ export default function ProjectsLayout() {
       ) : (
         <div className="text-center py-16 bg-muted rounded-lg mt-8">
           <h3 className="text-xl font-medium mb-2">No projects found</h3>
-          <p className="text-muted-foreground">Try adjusting your filters to find what you're looking for.</p>
+          <p className="text-muted-foreground">Try adjusting your filters to find what you&apos;re looking for.</p>
         </div>
       )}
     </div>

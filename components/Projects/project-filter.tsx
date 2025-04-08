@@ -4,13 +4,17 @@ import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Building2, Home, RouteIcon as Road, Factory, Filter } from "lucide-react"
 
+type ProjectCategory = "all" | "residential" | "commercial" | "roadworks" | "infrastructure"
+type ProjectStatus = "all" | "in-progress" | "completed"
+type SortOption = "newest" | "oldest"
+
 interface ProjectFilterProps {
   category: string
-  setCategory: (category: any) => void
+  setCategory: (category: ProjectCategory) => void
   status: string
-  setStatus: (status: any) => void
+  setStatus: (status: ProjectStatus) => void
   sort: string
-  setSort: (sort: any) => void
+  setSort: (sort: SortOption) => void
 }
 
 export function ProjectFilter({ category, setCategory, status, setStatus, sort, setSort }: ProjectFilterProps) {

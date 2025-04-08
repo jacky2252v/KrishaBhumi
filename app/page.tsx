@@ -1,6 +1,5 @@
 "use client"
 
-import Footer from "@/components/Footer"
 import GetInTouch from "@/components/GetInTouch"
 import Hero from "@/components/Hero"
 import WhatWeDo from "@/components/WhatWeDo"
