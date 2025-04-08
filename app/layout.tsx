@@ -1,6 +1,8 @@
+import Navbar from "@/components/Navbar/Navbar"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Toaster } from "@/components/ui/sonner"
+import Footer from "@/components/Footer"
 
 export default function RootLayout({
   children,
@@ -20,8 +22,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Navbar />
           {children}
           <Toaster />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
