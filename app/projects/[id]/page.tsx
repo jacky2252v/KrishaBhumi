@@ -4,17 +4,17 @@ import { Calendar, MapPin, User, Ruler, Clock, CheckSquare, ArrowLeft } from "lu
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import type { Metadata } from "next"
 import { projectsData } from "@/components/Projects/projects-data"
 
-interface ProjectPageProps {
-    params: {
+type ProjectPageProps = Promise<
+    {
         id: string
-    }
-}
 
-export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
-    const project = projectsData.find((p) => p.id === params.id)
+    }>
+
+export async function generateMetadata({ params }: { params: ProjectPageProps }) {
+    const { id } = await params;
+    const project = projectsData.find((p) => p.id === id)
 
     if (!project) {
         return {
@@ -28,8 +28,10 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     }
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-    const project = projectsData.find((p) => p.id === params.id)
+export default async function ProjectPage({ params }: { params: ProjectPageProps }) {
+    const { id } = await params;
+    const project = projectsData.find((p) => p.id === id)
+
 
     if (!project) {
         notFound()
