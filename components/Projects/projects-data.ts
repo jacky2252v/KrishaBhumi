@@ -21,7 +21,7 @@ export const projectsData: Project[] = [
     title: "Urban Heights Residence",
     description:
       "A modern 12-story residential complex with premium amenities including a rooftop garden, fitness center, and community spaces.",
-    image: "/img/UrbanHeights.jpg?height=400&width=600",
+    image: "/img/projects/UrbanHeights.jpg?height=400&width=600",
     category: "residential",
     status: "completed",
     location: "Mumbai, Maharashtra",
@@ -38,7 +38,7 @@ export const projectsData: Project[] = [
     title: "Green Valley Villas",
     description:
       "Eco-friendly residential community with 24 luxury villas, solar power integration, and rainwater harvesting systems.",
-    image: "/img/GreenVilla.jpeg?height=400&width=600",
+    image: "/img/projects/GreenVilla.jpeg?height=400&width=600",
     category: "residential",
     status: "in-progress",
     location: "Pune, Maharashtra",
@@ -55,7 +55,7 @@ export const projectsData: Project[] = [
     title: "Tech Park Plaza",
     description:
       "State-of-the-art commercial complex designed for tech companies with smart building features and collaborative spaces.",
-    image: "/img/TechPark.jpeg?height=400&width=600",
+    image: "/img/projects/TechPark.jpeg?height=400&width=600",
     category: "commercial",
     status: "completed",
     location: "Bangalore, Karnataka",
@@ -72,7 +72,7 @@ export const projectsData: Project[] = [
     title: "Coastal Highway Expansion",
     description:
       "Major infrastructure project expanding the coastal highway from 4 to 8 lanes with improved drainage and safety features.",
-    image: "/img/CoastalHighway.jpeg?height=400&width=600",
+    image: "/img/projects/CoastalHighway.jpeg?height=400&width=600",
     category: "roadworks",
     status: "in-progress",
     location: "Chennai, Tamil Nadu",
@@ -89,7 +89,7 @@ export const projectsData: Project[] = [
     title: "Sunrise Shopping Mall",
     description:
       "Multi-level shopping complex with entertainment zones, food courts, and underground parking for 500 vehicles.",
-    image: "/img/SunriseMall.jpeg?height=400&width=600",
+    image: "/img/projects/SunriseMall.jpeg?height=400&width=600",
     category: "commercial",
     status: "completed",
     location: "Delhi NCR",
@@ -106,7 +106,7 @@ export const projectsData: Project[] = [
     title: "River Bridge Project",
     description:
       "Construction of a 1.2 km cable-stayed bridge across the river with pedestrian walkways and scenic viewing points.",
-    image: "/img/RiverBridge.jpeg?height=400&width=600",
+    image: "/img/projects/RiverBridge.jpeg?height=400&width=600",
     category: "infrastructure",
     status: "in-progress",
     location: "Ahmedabad, Gujarat",
@@ -123,7 +123,7 @@ export const projectsData: Project[] = [
     title: "Lakeside Apartments",
     description:
       "Premium residential complex with 120 units overlooking the lake, featuring private balconies and community amenities.",
-    image: "/img/LakeSide.jpeg?height=400&width=600",
+    image: "/img/projects/LakeSide.jpeg?height=400&width=600",
     category: "residential",
     status: "completed",
     location: "Hyderabad, Telangana",
@@ -140,7 +140,7 @@ export const projectsData: Project[] = [
     title: "Metro Station Complex",
     description:
       "Integrated metro station with commercial spaces, parking facilities, and pedestrian-friendly access points.",
-    image: "/img/MetroStation.jpeg?height=400&width=600",
+    image: "/img/projects/MetroStation.jpeg?height=400&width=600",
     category: "infrastructure",
     status: "in-progress",
     location: "Kolkata, West Bengal",
@@ -157,7 +157,7 @@ export const projectsData: Project[] = [
     title: "Business Tower",
     description:
       "25-story premium office tower with smart building technology, sustainable design, and panoramic city views.",
-    image: "/img/BusinessTower.jpeg?height=400&width=600",
+    image: "/img/projects/BusinessTower.jpeg?height=400&width=600",
     category: "commercial",
     status: "completed",
     location: "Gurgaon, Haryana",

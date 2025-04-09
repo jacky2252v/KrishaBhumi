@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const Hero = () => {
-    const images = ["/img/imgOne.jpg", "/img/imgTwo.jpg", "/img/imgThree.jpg", "/img/imgFour.jpg"]
+    const images = ["/img/hero/imgOne.jpg", "/img/hero/imgTwo.jpg", "/img/hero/imgThree.jpg", "/img/hero/imgFour.jpg"]
 
     const [currentIndex, setCurrentIndex] = useState(0)
     const [isAutoPlaying, setIsAutoPlaying] = useState(true)
