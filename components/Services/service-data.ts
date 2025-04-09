@@ -10,7 +10,7 @@ export const services: ServiceData[] = [
     {
       id: "hybrid-coating",
       name: "Hybrid Coating",
-      image: "/img/services/hybrid-coating.jpg",
+      image: "/img/services/hybridCoating.jpg",
       desc: "A cutting-edge protective coating that combines durability with environmental resistance for long-term performance.",
       benefits: [
         "Enhanced surface durability",
@@ -22,7 +22,7 @@ export const services: ServiceData[] = [
     {
       id: "building-painting",
       name: "Building Painting",
-      image: "/img/services/building-painting.jpg",
+      image: "/img/services/buildingPainting.jpg",
       desc: "Professional painting services for both residential and commercial properties, ensuring a smooth, lasting finish.",
       benefits: [
         "High-quality paints and finishes",
@@ -34,7 +34,7 @@ export const services: ServiceData[] = [
     {
       id: "water-proofing",
       name: "Water Proofing",
-      image: "/img/services/water-proofing.jpg",
+      image: "/img/services/waterProofing.jpg",
       desc: "Comprehensive waterproofing solutions to protect your building from moisture, leaks, and long-term water damage.",
       benefits: [
         "Leak prevention and control",
