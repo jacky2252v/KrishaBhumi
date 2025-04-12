@@ -4,17 +4,18 @@ import { ArrowLeft, CheckCircle, Phone } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import type { Metadata, ResolvingMetadata } from "next"
+import type { Metadata } from "next"
 import { services } from "@/components/Services/service-data"
 
-interface ServicePageProps {
-  params: {
+type ServicePageProps  = Promise<
+{
     id: string
-  }
-}
 
-export async function generateMetadata({ params }: ServicePageProps, parent: ResolvingMetadata): Promise<Metadata> {
-  const service = services.find((s) => s.id === params.id)
+}>
+
+export async function generateMetadata({ params }: {params: ServicePageProps}): Promise<Metadata> {
+  const { id } = await params
+  const service = services.find((s) => s.id === id)
 
   if (!service) {
     return {
@@ -28,8 +29,9 @@ export async function generateMetadata({ params }: ServicePageProps, parent: Res
   }
 }
 
-export default function ServicePage({ params }: ServicePageProps) {
-  const service = services.find((s) => s.id === params.id)
+export default async function ServicePage({ params }: {params: ServicePageProps}) {
+  const { id } = await params;
+  const service = services.find((s) => s.id === id)
 
   if (!service) {
     notFound()
