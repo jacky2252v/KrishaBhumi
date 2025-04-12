@@ -18,19 +18,19 @@ const jsonData = [
   {
     id: 1,
     name: "Hybrid Coating",
-    image: "/img/hybridCoating.jpg",
+    image: "/img/services/hybridCoating.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
   {
     id: 2,
     name: "Building Painting",
-    image: "/img/buildingPainting.jpg",
+    image: "/img/services/buildingPainting.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
   {
     id: 3,
     name: "Water Proofing",
-    image: "/img/waterproofing.jpg",
+    image: "/img/services/waterproofing.jpg",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quis quod harum maxime fugit alias corporis vero unde eaque officiis ipsum aliquid repellat, officia corrupti neque commodi maiores.",
   },
 ]
