@@ -85,12 +85,12 @@ export default function AboutPage() {
               the industry through quality craftsmanship and innovative approaches.
             </p>
             <p className="text-muted-foreground dark:text-zinc-300 mb-4">
-              Over the years, we've grown into a full-service construction firm handling projects across residential,
+              Over the years, we&apos;ve grown into a full-service construction firm handling projects across residential,
               commercial, and infrastructure sectors. Our journey has been defined by our commitment to excellence and
               our ability to adapt to changing market demands.
             </p>
             <p className="text-muted-foreground dark:text-zinc-300">
-              Today, we're proud to be recognized as an industry leader, known for our sustainable building practices,
+              Today, we&apos;re proud to be recognized as an industry leader, known for our sustainable building practices,
               cutting-edge technology implementation, and unwavering dedication to client satisfaction.
             </p>
           </motion.div>
@@ -283,7 +283,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Work With Us?</h2>
           <p className="text-lg text-zinc-300 max-w-2xl mx-auto mb-8">
-            Let's discuss how we can bring your construction vision to life with our expertise and dedication to
+            Let&apos;s discuss how we can bring your construction vision to life with our expertise and dedication to
             excellence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

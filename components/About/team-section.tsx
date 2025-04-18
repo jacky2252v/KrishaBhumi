@@ -15,7 +15,7 @@ export function TeamMember() {
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">Meet Our Leadership Team</h2>
         <p className="text-muted-foreground dark:text-zinc-300 max-w-3xl mx-auto">
-          The experienced professionals guiding our company's vision and operations.
+          The experienced professionals guiding our company&apos;s vision and operations.
         </p>
       </div>
 
