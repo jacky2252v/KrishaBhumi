@@ -1,0 +1,80 @@
+{
+    "teamMembers": [
+        {
+            "name": "Rajesh Sharma",
+            "role": "Founder & CEO",
+            "image": "/placeholder.svg?height=400&width=400&text=RS",
+            "bio": "With over 25 years of experience in the construction industry, Rajesh founded Krisha Bhumi with a vision to transform the construction landscape in India."
+        },
+        {
+            "name": "Priya Patel",
+            "role": "Chief Operations Officer",
+            "image": "/placeholder.svg?height=400&width=400&text=PP",
+            "bio": "Priya oversees all operational aspects of our projects, ensuring timely delivery and maintaining our high quality standards."
+        },
+        {
+            "name": "Vikram Singh",
+            "role": "Chief Architect",
+            "image": "/placeholder.svg?height=400&width=400&text=VS",
+            "bio": "Vikram brings creative vision and technical expertise to our projects, specializing in sustainable design and innovative building solutions."
+        },
+        {
+            "name": "Ananya Desai",
+            "role": "Project Director",
+            "image": "/placeholder.svg?height=400&width=400&text=AD",
+            "bio": "Ananya manages our largest projects, coordinating teams and resources to ensure successful project execution from start to finish."
+        }
+    ],
+    "testimonials": [
+        {
+            "quote": "Krisha Bhumi transformed our vision into reality. Their attention to detail and commitment to quality exceeded our expectations.",
+            "author": "Amit Joshi",
+            "position": "CEO, Horizon Properties",
+            "image": "/placeholder.svg?height=100&width=100&text=AJ"
+        },
+        {
+            "quote": "Working with this team was a seamless experience. They delivered our commercial complex on time and within budget, with exceptional craftsmanship.",
+            "author": "Meera Shah",
+            "position": "Director, Urban Developments",
+            "image": "/placeholder.svg?height=100&width=100&text=MS"
+        },
+        {
+            "quote": "Their innovative approach to sustainable construction helped us achieve our green building certification while creating a beautiful, functional space.",
+            "author": "Rahul Kapoor",
+            "position": "Sustainability Officer, GreenTech",
+            "image": "/placeholder.svg?height=100&width=100&text=RK"
+        }
+    ],
+    "timelineEvents": [
+        {
+            "year": "2005",
+            "title": "Company Founded",
+            "description": "Krisha Bhumi was established as a small residential construction company with just 5 employees."
+        },
+        {
+            "year": "2008",
+            "title": "First Major Project",
+            "description": "Completed our first major residential complex, establishing our reputation for quality and reliability."
+        },
+        {
+            "year": "2012",
+            "title": "Expansion into Commercial",
+            "description": "Expanded our services to include commercial construction, doubling our team size and project capacity."
+        },
+        {
+            "year": "2015",
+            "title": "Sustainable Building Initiative",
+            "description": "Launched our sustainable building initiative, committing to eco-friendly construction practices."
+        },
+        {
+            "year": "2018",
+            "title": "Infrastructure Division",
+            "description": "Added infrastructure projects to our portfolio, working on roads, bridges, and public facilities."
+        },
+        {
+            "year": "2023",
+            "title": "Digital Transformation",
+            "description": "Implemented cutting-edge technology solutions to enhance project management and client experience."
+        }
+    ]
+}

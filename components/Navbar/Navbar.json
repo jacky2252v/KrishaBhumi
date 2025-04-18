@@ -16,7 +16,7 @@
         "navName": "Contact"
     },
     "about": {
-        "navLink": "/about",
+        "navLink": "/about-us",
         "navName": "About Us"
     }
 }
