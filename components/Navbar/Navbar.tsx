@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-4 md:px-8 py-3">
         <div className="flex items-center">
           <Image
-            src="/img/logolight.png"
+            src="/img/logoLight.png"
             alt="Krisha Bhumi Logo"
             className="h-16 w-auto hidden dark:block"
             width={160}
